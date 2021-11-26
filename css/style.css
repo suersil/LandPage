@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    
     
   }
 
@@ -13,13 +16,17 @@ html{
         background-color: rgb(210, 219, 219);
     }
 
-    section .banner{
-        width: 20px;
-        height: 20px;
+    .banner{
+        max-height: auto;
+        max-width: auto;
+        text-align-last: center;
+        margin: 30px;
+       
     }
 header{
     background-color: rgb(142, 182, 175);
     display: flex;   
+
 }
 header img{
     max-height: 200px;
@@ -35,31 +42,38 @@ header img{
     
     nav ul{
         white-space: nowrap;
-        max-width: 1800px;
+        max-width: 1700px;
         margin:0;
     }
     nav li{
-        width: 32%;
+        width: 30%;
         display: inline-block;
-        font-size: 40px;
         text-align: center;
         
     }
     nav li a{
         text-decoration: none;
         color: rgb(221, 217, 216);
-        font-family: 'Indie Flower', cursive;
         font-weight: bold;
+        font-size: 30px;
+        border:2px solid rgb(73, 54, 78);
+        padding: 10px;
+        
     }
    
    
-    #news h2{
+     h2{
         font-size: 30px;
+        text-align-last: center;
+        background-color: rgb(142, 182, 175);
+        padding: 15px;
     }
 
     #news img{
         max-width: 250px;
         border: 3px solid white;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
     }
 
@@ -67,8 +81,10 @@ header img{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        
   
+    }
+    #contact{
+        background-color: rgb(174, 180, 179);
     }
     footer{
         background-color: rgb(142, 182, 175);
