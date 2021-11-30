@@ -5,8 +5,7 @@
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    
-    
+
   }
 
 html{
@@ -23,13 +22,17 @@ html{
         margin: 30px;
        
     }
-header{
-    background-color: rgb(142, 182, 175);
-    display: flex;   
+    header{
+        background-color: rgb(142, 182, 175);
+        display: flex;   
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
 
 }
-header img{
-    max-height: 200px;
+    header img{
+        max-height: 150px;
    
 }
     header nav{
@@ -42,11 +45,11 @@ header img{
     
     nav ul{
         white-space: nowrap;
-        max-width: 1700px;
+        max-width: 1300px;
         margin:0;
     }
     nav li{
-        width: 30%;
+        width: 25%;
         display: inline-block;
         text-align: center;
         
@@ -55,12 +58,10 @@ header img{
         text-decoration: none;
         color: rgb(221, 217, 216);
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
         border:2px solid rgb(73, 54, 78);
-        padding: 10px;
-        
+        padding: 10px;  
     }
-   
    
      h2{
         font-size: 22px;
@@ -74,18 +75,79 @@ header img{
         border: 3px solid white;
         margin-top: 30px;
         margin-bottom: 30px;
-
+        
     }
 
     .list-news {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        text-align: center;
+        font-style:italic;
+        text-justify: newspaper;
+    }
+
   
+    li{
+        list-style-type: none;
+        margin:25px;
     }
+    
+    #join p{
+        margin: 20px;
+    }
+    #join {
+        margin-bottom: 50px;
+    }
+    @media (max-width: 100px){
+        #video {
+            position: relative;    
+        }
+    }
+
     #contact{
-        background-color: rgb(245, 253, 253);
+        background-color: rgb(131, 133, 133);
+        text-align: center;
+        padding: 30px;
+      
     }
+
+    #contact h3{
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    #contact p{
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    form input, textarea{
+        background-color: rgb(219, 215, 215);
+        padding: 10px;
+    }
+   
+    
+    form #submit{
+        background-color: rgb(63, 163, 130);
+    }
+
     footer{
         background-color: rgb(142, 182, 175);
+        text-align: end;
+        text-decoration:none;
+        padding: 20px;
+    }
+      
+      footer > ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      footer > ul > li {
+        padding: 0 10px;
+      }
+     
+    #submit:hover{
+        background-color: greenyellow;
+
     }
